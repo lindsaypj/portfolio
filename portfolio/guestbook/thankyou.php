@@ -13,7 +13,7 @@
     if (!$connection) {
         $pageHeader = "An error occurred connecting to our database!";
         $headerText = "Your contact info was not uploaded.";
-        include("includes/guestbook-header.html");
+        include("includes/guestbook-header.php");
         die();
     }
 
@@ -65,17 +65,21 @@
     // SEND ENTRY to database
     $sql = "INSERT INTO `guestbook`
         VALUES (DEFAULT, '$first', '$last', $job, $linkedin, $email, '$howWeMet', $message, $mailList, $emailFormat, DEFAULT)";
-     $result = @mysqli_query($connection, $sql);
+
+    if (!empty($_POST)) {
+        $result = @mysqli_query($connection, $sql);
+    }
+
 
     if (!$result) { // Display error if new entry failed to be added to database
         $pageHeader = "An error occurred adding your info to our database!";
         $headerText = "Your contact info was not uploaded.";
-        include ("includes/guestbook-header.html");
+        include("includes/guestbook-header.php");
         die();
     }
 
     $pageHeader = "Thank you!";
     $headerText = "Your contact has been added to my guestbook.";
-    include ("includes/guestbook-header.html");
+    include("includes/guestbook-header.php");
     include ("includes/footer.php");
 ?>
