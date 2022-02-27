@@ -9,6 +9,7 @@
     $pageHeader = "Patrick's Guestbook";
     $headerText = "Please fill out the contact form bellow so that we can stay in touch.
                    Upon submission, you will be added to my guestbook.";
+    $activeNav = "guestbook";
 
     // Add Head to the page
     include("includes/guestbook-header.html");
