@@ -1,3 +1,10 @@
+<!--
+    Variables to declare for including this file:
+    $title      page title declared in head
+    $pageHeader primary header for the jumbotron at the top of the page
+    $headerText Text under the page header inside the jumbotron
+    $activeNav  declare the nav link that should be set to active for the page
+-->
 <!doctype html>
 <html lang="en">
 <head>
@@ -22,7 +29,10 @@
 </head>
 <body>
 <main class="mb-5 clearfix">
-    <div class="container-fluid py-4">
+
+    <?php include ("../nav.php");?>
+
+    <div class="container-fluid py-2">
 
         <div class="pb-3 mb-4 border-bottom border-2"></div>
 
