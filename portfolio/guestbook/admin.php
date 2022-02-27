@@ -5,7 +5,7 @@ $headerText = "View guestbook entries.";
 $activeNav = "admin";
 
 // Add Head to the page
-include("includes/guestbook-header.html");
+include("includes/guestbook-header.php");
 ?>
 
         <!-- Guests table -->
@@ -13,7 +13,6 @@ include("includes/guestbook-header.html");
             <table id="guestTable" class="datatable cell-border">
                 <thead class="text-white">
                     <tr>
-                        <th>ID</th>
                         <th>First Name</th>
                         <th>Last Name</th>
                         <th>Job Title</th>
@@ -51,14 +50,13 @@ include("includes/guestbook-header.html");
                                 $email = $row['email'];
                                 $howWeMet = $row['meet'];
                                 $message = $row['message'];
-                                if ($row['on_mail_list']) $mailList = 'true';
-                                else $mailList = 'false';
+                                if ($row['on_mail_list']) $mailList = 'Yes';
+                                else $mailList = 'No';
                                 $emailFormat = $row['email_format'];
                                 $formDate = $row['entry_date'];
 
                                 // Print the row into the table
-                                echo "<tr>
-                                    <td>$guestID</td>      
+                                echo "<tr>     
                                     <td>$fname</td>
                                     <td>$lname</td>      
                                     <td>$jobTitle</td>      
