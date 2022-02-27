@@ -2,6 +2,7 @@
 $title = "Admin";
 $pageHeader = "Guestbook Admin Panel";
 $headerText = "View guestbook entries.";
+$activeNav = "admin";
 
 // Add Head to the page
 include("includes/guestbook-header.html");
