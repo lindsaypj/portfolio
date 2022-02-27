@@ -1,0 +1,145 @@
+/***   ==========   RESUME STYLES   ==========   ***/
+
+/* Page Font */
+body, h5 {
+    font-family: 'EB Garamond', 'Times New Roman', serif;
+    font-size: 18px;
+}
+
+/*   =====   HEADER   =====   */
+
+/* My Name Font size */
+@media (max-width: 768px) { /* Smaller than Bootstrap MEDIUM */
+    h1#name {
+        font-size: 3rem;
+    }
+}
+@media (min-width: 768px) { /* Larger than Bootstrap MEDIUM */
+    h1#name {
+        font-size: 4.3rem;
+    }
+}
+@media (min-width: 992px) { /* Larger than Bootstrap LARGE */
+    h1#name {
+        font-size: 4.5rem;
+    }
+}
+
+/*   =====   CONTENT   =====   */
+
+/* Fonts */
+h2 {
+    font-size: 30px;
+    color: rgb(10, 50, 150);
+}
+p, h5 {
+    font-weight: bold;
+}
+
+/* Lists */
+
+/* Dash list style-type (METHOD 1) SOURCE: https://stackoverflow.com/questions/3200249/html-list-style-type-dash */
+/* Maybe works for IE and Android Opera */
+ul.list-style-dash {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 2.5em;
+}
+ul.list-style-dash > li:before {
+    content: "- ";
+    position: absolute;
+    margin-left: -1em;
+}
+/* Dash list style-type (METHOD 2) SOURCE: Also from ^^^ */
+/* Does not work with IE or Android Opera SOURCE: https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type */
+ul.list-style-dash {
+    list-style-type: "-   ";
+}
+
+img {
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+/*   =====   CUSTOM FONT FROM GOOGLE FONTS   =====   */
+
+/* eb-garamond-regular - latin */ /* SOURCE: https://google-webfonts-helper.herokuapp.com/fonts/eb-garamond?subsets=latin */
+@font-face {
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/eb-garamond-v19-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+    url('../fonts/eb-garamond-v19-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/eb-garamond-v19-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/eb-garamond-v19-latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/eb-garamond-v19-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/eb-garamond-v19-latin-regular.svg#EBGaramond') format('svg'); /* Legacy iOS */
+}
+/* eb-garamond-500 - latin */
+@font-face {
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/eb-garamond-v19-latin-500.eot'); /* IE9 Compat Modes */
+    src: local(''),
+    url('../fonts/eb-garamond-v19-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/eb-garamond-v19-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/eb-garamond-v19-latin-500.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/eb-garamond-v19-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/eb-garamond-v19-latin-500.svg#EBGaramond') format('svg'); /* Legacy iOS */
+}
+/* eb-garamond-600 - latin */
+@font-face {
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/eb-garamond-v19-latin-600.eot'); /* IE9 Compat Modes */
+    src: local(''),
+    url('../fonts/eb-garamond-v19-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/eb-garamond-v19-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/eb-garamond-v19-latin-600.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/eb-garamond-v19-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/eb-garamond-v19-latin-600.svg#EBGaramond') format('svg'); /* Legacy iOS */
+}
+/* eb-garamond-700 - latin */
+@font-face {
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/eb-garamond-v19-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+    url('../fonts/eb-garamond-v19-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/eb-garamond-v19-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/eb-garamond-v19-latin-700.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/eb-garamond-v19-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/eb-garamond-v19-latin-700.svg#EBGaramond') format('svg'); /* Legacy iOS */
+}
+/* eb-garamond-800 - latin */
+@font-face {
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/eb-garamond-v19-latin-800.eot'); /* IE9 Compat Modes */
+    src: local(''),
+    url('../fonts/eb-garamond-v19-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/eb-garamond-v19-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/eb-garamond-v19-latin-800.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/eb-garamond-v19-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/eb-garamond-v19-latin-800.svg#EBGaramond') format('svg'); /* Legacy iOS */
+}
+/* eb-garamond-italic - latin */
+@font-face {
+    font-family: 'EB Garamond';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/eb-garamond-v19-latin-italic.eot'); /* IE9 Compat Modes */
+    src: local(''),
+    url('../fonts/eb-garamond-v19-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/eb-garamond-v19-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/eb-garamond-v19-latin-italic.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/eb-garamond-v19-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/eb-garamond-v19-latin-italic.svg#EBGaramond') format('svg'); /* Legacy iOS */
+}
