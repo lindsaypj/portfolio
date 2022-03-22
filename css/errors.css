@@ -1,0 +1,9 @@
+/*** INLINE ERROR STYLES ***/
+.error {
+    font-style: italic;
+    margin-top: 3px;
+    color: red;
+}
+.inputError {
+    background-color: lightpink;
+}

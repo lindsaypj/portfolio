@@ -1,0 +1,39 @@
+/*** FONT SIZE ***/
+nav, .dropdown-menu  {
+    font-size: 1.2rem;
+}
+
+/*** DROPDOWN ***/
+/* Item Hover */
+nav ul > li > a.nav-link:hover {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 0.25rem;
+}
+/* Positioning */
+.dropdown-menu {
+    position: absolute !important;
+}
+
+/*** LINK LOGOS ***/
+nav svg {
+    fill: currentColor;
+    margin-top: -6px;
+}
+
+/*** BACKGROUND ***/
+.bg-opacity-90 {
+    --bs-bg-opacity: 0.90;
+}
+
+/*** TRANSITION ***/
+/*nav {*/
+/*    transition: height 1s;*/
+/*}*/
+
+/*** LOGOUT BUTTON POSITIONING ***/
+@media (min-width: 575px) {
+    #logoutLink {
+        position: absolute;
+        right: 64px;
+    }
+}

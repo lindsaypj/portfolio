@@ -1,0 +1,123 @@
+
+/*** BACKGROUND IMAGE ***/
+#container1 {
+    background-image: url("../images/backgrounds/BW-tree.JPG");
+    background-size: cover;
+    background-position: top right;
+}
+#container2 {
+    background-image: url("../images/backgrounds/high-contrast-clouds.jpg");
+    background-size: cover;
+    background-position: top right;
+}
+#container3 {
+    background-color: black;
+}
+#container4 {
+    background-color: black;
+}
+
+.container-transition1-top {
+    background-image: linear-gradient(0deg, rgba(50, 50, 50, 1), rgba(40, 40, 40, 0));
+}
+.container-transition1-bottom {
+    background-image: linear-gradient(180deg, rgba(50, 50, 50, 1), rgba(50, 50, 50, 0));
+}
+.container-transition2-top {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+.container-transition2-bottom {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+body {
+    text-shadow: black 1px 1px 4px;
+}
+.bg-opacity-80 {
+    --bs-bg-opacity: 0.80;
+}
+
+/*** NO TEXT SHADOW ***/
+.text-shadow-none {
+    text-shadow: none !important;
+}
+
+/*** FONT SIZES ***/
+h2 {
+    font-size: 1.7rem;
+}
+
+/*** TEXT INDENT ***/
+.indent {
+    text-indent: 3rem;
+}
+@media (min-width: 768px) {
+    .indent-md {
+        text-indent: 4.5vw;
+    }
+}
+@media (min-width: 900px) {
+    .indent-md {
+        text-indent: 5vw;
+    }
+}
+
+/*** TRANSITIONS ***/
+
+div.row > div {
+    transition: width 1s;
+}
+.ease-pad {
+    transition: padding 0.5s, margin 0.5s;
+}
+
+#titleBlock {
+    transition: padding 0.5s;
+}
+
+/*** PAGE DIVIDERS ***/
+.page-divider {
+    height: 15vw;
+}
+
+
+/*** ===== IMAGE STYLES ===== ***/
+
+/*** PORTRAIT ***/
+#portrait {
+    width: 100%;
+    max-width: 200px;
+    filter: grayscale(100%);
+}
+
+#instagramLogo {
+    margin-top: -4px;
+}
+
+/*** FAVICON SIZING ***/
+#favicon {
+    max-width: 25px;
+}
+
+#jgrasp-logo {
+    filter: invert(100%);
+    margin-top: 15px;
+    width: 150px;
+}
+
+/*** CARD STYLES ***/
+.card {
+    float: left;
+    position: relative;
+}
+.card img {
+    width: 100%;
+}
+
+/*** LINK HOVER ***/
+a {
+    color: white;
+}
+a:hover {
+    color: rgb(200,200,200);
+}
