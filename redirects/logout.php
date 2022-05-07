@@ -1,6 +1,6 @@
 <?php
 session_start();
-$loggedOutPage = isset($_SESSION['currentPage']) ? $_SESSION['currentPage'] : '/305/portfolio/';
+$loggedOutPage = isset($_SESSION['currentPage']) ? $_SESSION['currentPage'] : '/portfolio/';
 
 session_destroy();
 $_SESSION = array();

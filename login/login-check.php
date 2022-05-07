@@ -37,7 +37,7 @@ if (!empty($_POST)) {
             //Record the username in the session array
             $_SESSION['username'] = $username;
 
-            header('location: /305/portfolio/guestbook/admin.php');
+            header('location: /portfolio/guestbook/admin.php');
         }
         else {
             //Invalid login -- set flag variable

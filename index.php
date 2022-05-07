@@ -1,6 +1,6 @@
 <?php
     session_start();
-    $_SESSION['currentPage'] = "/305/portfolio/";
+    $_SESSION['currentPage'] = "/portfolio/";
     $page = "home";
     $activeNav = $page;
 
@@ -272,7 +272,7 @@ include("login/login-modal.php");
 
                                 <!-- Dealership Project Header -->
                                 <h2 class="px-5 px-lg-3 fw-normal text-center text-md-start text-lg-center ease-pad">Dealership Website
-                                    <a class="text-primary" href="/305/portfolio/demos/bmw/home.php" target="_blank" aria-label="Demo site, BMW Dealership">
+                                    <a class="text-primary" href="/portfolio/demos/bmw/home.php" target="_blank" aria-label="Demo site, BMW Dealership">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="mb-3" viewBox="0 0 16 16">
                                             <title>BMW of Sunnyville: Demo site</title>
                                             <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>

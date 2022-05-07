@@ -20,12 +20,12 @@
                 <li>
                     <!-- Home -->
                     <a class="nav-item nav-link <?php if($activeNav === "home") echo "active"; ?>"
-                       href="//plindsay.greenriverdev.com/305/portfolio/index.php">Home</a>
+                       href="//plindsay.greenriverdev.com/portfolio/index.php">Home</a>
                 </li>
                 <li>
                     <!-- Guestbook Form -->
                     <a class="nav-item nav-link <?php if($activeNav === "guestbook") echo "active"; ?>"
-                       href="//plindsay.greenriverdev.com/305/portfolio/guestbook/guestbook.php">Guestbook</a>
+                       href="//plindsay.greenriverdev.com/portfolio/guestbook/guestbook.php">Guestbook</a>
                 </li>
                 <li>
                     <!-- My Links Dropdown -->
@@ -52,7 +52,7 @@
                                 </a></li>
 
                             <!-- Resume -->
-                            <li><a class="nav-item nav-link" href="https://plindsay.greenriverdev.com/305/portfolio/resume/resume.php" target="_blank">Resume</a></li>
+                            <li><a class="nav-item nav-link" href="https://plindsay.greenriverdev.com/portfolio/resume/resume.php" target="_blank">Resume</a></li>
                         </ul>
                     </div>
                 </li>
@@ -67,7 +67,7 @@
                         $activeClass = "";
                         if ($activeNav === "admin") $activeClass = "active";
                         echo "<a class='nav-item nav-link $activeClass'
-                    href='//plindsay.greenriverdev.com/305/portfolio/guestbook/admin.php'>Admin</a>";
+                    href='//plindsay.greenriverdev.com/portfolio/guestbook/admin.php'>Admin</a>";
                     }?>
                 </li>
                 <li class="nav-item float-end">
@@ -75,7 +75,7 @@
                     <?php
                     if (!empty($_SESSION['username'])) {
                         echo "<a id='logoutLink' class='nav-link float-start'
-                    href='//plindsay.greenriverdev.com/305/portfolio/redirects/logout.php'>Logout</a>";
+                    href='//plindsay.greenriverdev.com/portfolio/redirects/logout.php'>Logout</a>";
                     }
                     ?>
                 </li>
