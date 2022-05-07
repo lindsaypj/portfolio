@@ -1,0 +1,726 @@
+
+/*=====================================================================*/
+   	  /*** ESSENTIAL PROPERTIES (DO NOT CHANGE BASED ON SIZE) ***/
+/*=====================================================================*/
+
+/***  ====== HEADER ======  ***/
+	h1 {
+		text-align: center;
+		font-size: 6vw;
+		font-family: 'Nunito Sans', sans-serif;
+		font-weight: 700;
+		color: #F5F5F5;
+	}
+	div#header {
+		width: 100%;
+		background-image: linear-gradient(to right, black, #141414, #1F1F1F, #141414, black); /* With help from: https://www.w3schools.com/css/css3_gradients.asp */
+	}
+
+	/* BMW Logo */
+	div#header img {
+		position: absolute;
+		margin: 17px 17px 0px 0px;
+	}
+
+	/*** ====== NAVIGATION ====== ***/
+
+	ul#nav {
+		list-style-type: none;
+		
+		display: table;
+		position: relative;
+		margin: auto;
+	}
+	div.navigation li {
+		float: left;
+		margin: 0px;
+	}
+	div.navigation a {
+		display: block;
+		margin: 0px;
+		color: #F5F5F5;
+		text-decoration: none;
+		text-align: center;
+	}
+	div.navigation a:hover {
+		text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px gray; /* https://www.w3schools.com/howto/howto_css_glowing_text.asp */
+	}
+
+	/* Submenu */
+	.menu {
+		position: relative;
+	}
+	.subnav {
+		display: none;
+		position: absolute;
+		transform: translate(0, -0.1px); /* Overlap just a little */
+		padding: 0px;
+		
+		background-color: #1F1F1F;
+		list-style-type: none;
+		border: 3px solid #0582CA;
+	}
+	.subnav li {
+		width: 100%;
+	}
+	.menu:hover .subnav {
+		display: block;
+	}
+
+	/* Border and nav background */
+	div.navigation > div {
+		border-top: 3px solid #0582CA;
+		border-bottom: 3px solid #0582CA;
+		
+		padding: 0px;
+	}
+	div.navigation {
+		background-image: linear-gradient(to right, black, #141414, #1F1F1F, #141414, black); /* With help from: https://www.w3schools.com/css/css3_gradients.asp */
+		padding: 8px 0px 10px 0px;
+		margin-bottom: 26px;
+	}
+	
+/*** ====== BODY ====== ***/
+	body {
+		width: 100%;
+		margin: 0px;
+		padding: 0px;
+		background-color: #F5F5F5;
+	}
+	h3 {
+		font-family: 'Nunito Sans', sans-serif;
+		color: #141414;
+		
+		width: 100%;
+	}
+	p.basic {
+		text-indent: 50px;
+	}
+	.ancor_offset {
+		content: "";
+		position: absolute;
+		top: -80px;
+	}
+	.relative {
+		position: relative;
+	}
+	
+	/* Learn More Buttons */
+	div.learn a {
+		position: absolute;
+		text-decoration: none;
+		color: #F5F5F5;
+		background-color: #00A3F5;
+		font-weight: 700;
+		box-shadow: 1px 2px 9px black;
+	}
+	div.learn a:hover {
+		background-color: #0582CA;
+	}
+	
+	/* Fixing ancor scroll position to adjust for nav bar */
+	:target:before {
+		content: "";
+		display: block;
+		
+		padding-top: 100px; 
+		margin-top: -50px;
+	}
+	
+	/*** ====== FOOTER ====== ***/
+	
+	div#footer {
+		width: 100%;
+		background-color: #1F1F1F;
+		padding: 20px 10%;
+		color: #F5F5F5;
+		text-align: center;
+	}
+	div#footer ul {
+		list-style-type: none;
+		padding: 0px;
+	}
+	div#footer li {
+		text-indent: 0px;
+		font-size: 1.6vw;
+	}
+	div#footer a {
+		text-decoration: none;
+		color: #F5F5F5;
+	}
+	div#footer a:hover {
+		color: #00A3F5;
+	}
+	
+/*** ====== BODY OF HOME PAGE ====== ***/
+
+	/* Link Panels */
+	div.panel a {
+		position: relative;
+		text-decoration: none;
+		color: white;
+		width: 100%;
+		margin: 0px;
+	}
+	div.panel a img, img.grid_img, .listing_img {
+		width: 100%;
+	}
+	div.black_box, div.black_box2, div.black_box3 {
+		position: absolute;
+		opacity: 0%;
+		width: 100%;
+		object-fit: contain;
+		background-image: radial-gradient(transparent, black 90%);
+	}
+	div.panel a h2 {
+		position: absolute;
+		transform: translate(0, -100%);
+		padding: 10px 30px 10px 0px;
+		width: 100%;
+		background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+		text-align: right;
+		opacity: 90%;
+	}
+	div.panel a .black_box:hover, div.panel a .black_box2:hover, div.panel a .black_box3:hover{
+		opacity: 30%;
+	}
+	
+	/* Ultimate Driving Experience */
+	h2#h2_ultimate {
+		position: absolute;
+		top: 0px;
+		padding: 2.5vw 0px 0px 4vw;
+		
+		color: white;
+		text-shadow: 2px 1px 8px black;
+		
+		font-weight: 300;
+		font-family: 'Nunito Sans', sans-serif;
+		font-size: 6vw;
+		line-height: 7vw;
+	}
+	h2#h2_ultimate span {
+		font-weight: 700;
+	}
+	div#div_ultimate {
+		padding: 0px 26px;
+		margin-bottom: -10vw;
+		overflow: hidden;
+	}
+	img#img_ultimate {
+		padding: 0px;
+		margin: 0px;
+		
+		width: 100%;
+		height: 80%;
+
+		object-fit: cover;
+		object-position: 50% 0%;
+	}
+	/* Learn More Button */
+	div#div_ultimate div.learn a {
+		padding: 1.3vw 2.5vw;
+		right: 16vw;
+		bottom: 17.5vw;
+		border-radius: 4px;
+		
+		font-size: 2vw;
+	}
+	
+	/* Getting Started Section */
+	div.logobox {
+		margin: auto;
+		margin-bottom: 6vw;
+		text-align: center;
+	}
+	div.logobox a {
+		text-decoration: underline;
+		color: #00A3F5;
+	}
+	div.logobox a:visited {
+		color: #00A3F5;
+	}
+	div.logobox a:hover {
+		color: #0582CA;
+	}
+	div.logobox img {
+		filter: hue-rotate(7deg);
+		filter: brightness(160%);
+	}
+	
+	
+/*** ====== ABOUT US PAGE ====== ***/
+	
+	div.about_text {
+		display: block;
+		margin: 10px;
+		padding: 10px 10px 0px 10px;
+		background-color: #EBEBEB;
+	}
+	div.about_img {
+		margin-bottom: 10px;
+	}
+	div.title {
+		display: block;
+		margin: 0px;
+	}
+	
+	/* Grid IDs */
+	div#about_title1 {grid-area: about_title1;}
+	div#about_title2 {grid-area: about_title2;}
+	div#about_text1 {grid-area: about_text1;}
+	div#about_text2 {grid-area: about_text2;}
+	div#about_img1 {grid-area: about_img1;}
+	div#about_img2 {grid-area: about_img2;}
+
+	
+/*** ====== *ALL LISTINGS PAGE ====== ***/
+	
+	/* All Listings Title */
+	div#listings_title1 h3 {
+		font-weight: 700;
+		border-bottom: 0.5vw solid black;
+	}
+
+	.listings_grid p, .new_listings_grid p, .used_listings_grid p {
+		color: black;
+		text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px gray; /* https://www.w3schools.com/howto/howto_css_glowing_text.asp */
+		
+		position: absolute;
+		top: -8.5vw;
+		left: 1.2vw;
+		font-weight: 700;
+		font-size: 2.1vw;
+	}
+	
+	/* Grid IDs */
+	div#listings_435i {grid-area: listings_435i;}
+	div#listings_330ci {grid-area: listings_330ci;}
+	div#listings_z4 {grid-area: listings_z4;}
+	div#listings_550i {grid-area: listings_550i;}
+	div#listings_m5comp {grid-area: listings_m5comp;}
+	div#listings_m8comp {grid-area: listings_m8comp;}
+	div#listings_b7 {grid-area: listings_b7;}
+	div#listings_m3 {grid-area: listings_m3;}
+	div#listings_m240i {grid-area: listings_m240i;}
+	div#listings_i3 {grid-area: listings_i3;}
+	div#listings_x5 {grid-area: listings_x5;}
+	div#listings_330i {grid-area: listings_330i;}
+	
+	div#listings_title1 {grid-area: listings_title1;}
+	
+	
+/*** ====== INDIVIDUAL LISTINGS ====== ***/
+	
+	div.listing {
+		background-image: linear-gradient(to right, black, #141414, #1F1F1F, #141414, black); /* With help from: https://www.w3schools.com/css/css3_gradients.asp */ 
+		margin-top: -26px;
+		padding: 10px 30px 50px 30px;
+	}
+	div.listing h1 {
+		padding: 20px 0px;
+		color: #00A3F5;
+		font-size: 60px;
+		font-family: 'Poiret One', cursive;
+	}
+	div.listing h3 {
+		color: #00A3F5;
+		font-size: 40px;
+		margin-top: 50px;
+		padding: 0px;
+		text-align: center;
+	}
+	div.listing h4 {
+		color: white;
+		font-size: 30px;
+	}
+	div.listing table {
+		color: #F5F5F5;
+		text-align: center;
+		margin: auto;
+	}
+	div.listing td, div.listing th {
+		padding: 1vw 1vw;
+	}
+	div.listing table img {
+		filter: invert(100%);
+	}
+
+
+	/*** ====== COMPANY BLOG PAGE ====== ***/
+	h4#header-company {
+		position: absolute;
+		right: 30px;
+		color: white;
+		top: 57px;
+	}
+
+	#blog-header h3 {
+		border-bottom: 0.5vw solid black;
+		text-align: center;
+		padding: 20px 0;
+	}
+	p.divider {
+		border-bottom: 0.1vw solid black;
+	}
+
+	#blog-content p {
+		font-size: 21px;
+		font-family: "Times New Roman", serif;
+	}
+/*=====================================================================*/
+					/*** VARYING SCREEN SIZES ***/
+/*=====================================================================*/
+/*** Small screens ***/
+@media screen and (max-width: 768px) {
+	/* BMW Logo */
+	div#header img {
+		width: 80px;
+	}
+	
+	/* Header */
+	h1 {
+		padding: 30px;
+	}
+	h3 {
+		font-size: 7vw;
+		text-align: center;
+		margin-top:20px;
+	}
+	/* Navigation */
+	div.navigation li {
+		padding: 15px 25px;
+	}
+	/* Submenu */
+	.subnav {
+		top: 48px;
+		left: 3px;
+		width: 100px;
+	}
+	.subnav li {
+		height: 50px;
+	}
+	ul#nav > li > a, .subnav a {
+		line-height: 17px;
+	}
+	/* Link Panels */
+	div.panel a h2 {
+		font-size: 4vw;
+	}
+	div.margin26 {
+		padding: 0px;
+		margin-bottom: 26px;
+	}
+	div.black_box {
+		height: 65vw;
+	}
+	div.black_box2 {
+		height: 55vw;
+	}
+	div.black_box3 {
+		height: 30.5vw;
+	}
+	
+	/* Footer */
+	div#footer li {
+		font-size: 3vw;
+	}
+	div#footer h4 {
+		font-size: 4vw;
+	}
+	
+	/* Home Page Layout */
+	
+	/* Getting Started Section */
+	div.logobox {
+		margin-top: 4vw;
+		padding: 5vw;
+		padding-top: 0px;
+	}
+	div.logobox h4 {
+		font-size: 5vw;
+	}
+	div.logobox p {
+		font-size: 3vw;
+	}
+	div.logobox a {
+		font-size: 3vw;
+	}
+	div.logobox img {
+		width: 15vw;
+		margin: 1vw;
+	}
+		
+	/* About Us Layout */
+	div#about_grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		grid-template-areas: "about_title1  about_title1"
+							 "about_text1   about_text1"
+							 "about_img1    about_img1"
+							 "about_title2  about_title2"
+							 "about_text2   about_text2"
+							 "about_img2    about_img2";						 
+		grid-gap: 10px;
+	}
+	div#about_text {
+		margin: 10px;
+	}
+	
+	/* Listings Page */
+	.listings_grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		grid-template-areas: "listings_title1  listings_title1"		
+							 "listings_435i    listings_b7"
+							 "listings_330ci   listings_m3"
+							 "listings_m5comp  listings_550i"
+							 "listings_z4      listings_m8comp"
+							 "listings_m240i   listings_i3"
+							 "listings_x5      listings_330i";				 
+		grid-gap: 10px;
+		padding: 10px;
+	}
+	.listings_grid h2.listings_h2 {
+		font-size: 3.5vw;	
+	}
+	.listings_grid p, .new_listings_grid p, .used_listings_grid p {
+		top: -12vw;
+		left: 2vw;
+		font-size: 2.8vw;
+	}
+	
+	/* New Listings Page */
+	/* Listings Page */
+	.new_listings_grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		grid-template-areas: "listings_title1  listings_title1"		
+							 "listings_b7      listings_m5comp"
+							 "listings_m8comp  listings_i3"
+							 "listings_x5      listings_330i";				 
+		grid-gap: 10px;
+		padding: 10px;
+	}
+	.new_listings_grid h2.listings_h2 {
+		font-size: 3.5vw;	
+	}
+	
+	/* Used Listings Page */
+	/* Listings Page */
+	.used_listings_grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		grid-template-areas: "listings_title1  listings_title1"		
+							 "listings_435i    listings_330ci"
+							 "listings_m3      listings_550i"
+							 "listings_z4      listings_m240i";				 
+		grid-gap: 10px;
+		padding: 10px;
+	}
+	.used_listings_grid h2.listings_h2 {
+		font-size: 3.5vw;	
+	}
+	
+	/* Individual Listings */
+	div.listing h1 {
+		text-align: center;
+	}
+	div.listing h4 {
+		padding: 0;
+		text-align: center;
+		margin: -70px 0px 50px 0px;
+	}
+	div.listing table img, div.listing table th {
+		height: 8vw;
+	}
+}
+
+/*** Medium screen and Larger ***/
+@media screen and (min-width: 768px) {
+	/* BMW Logo */
+	div#header img {
+		width: 120px;
+	}
+	
+	/* Header */
+	h1 {
+		padding: 40px;
+		font-size: 50px;
+	}
+	h3 {
+		font-size: 5vw;
+		padding: 20px 0% 20px 20%;
+	}
+	/* Navigation */
+	div.navigation li {
+		padding: 15px 40px;
+		font-size: 23px;
+	}
+	
+	/* Submenu */
+	.subnav {
+		top: 61px;
+		left: 5px;
+		width: 150px;
+	}
+	.subnav li {
+		height: 70px;
+	}
+	ul#nav > li > a, .subnav a {
+		line-height: 30px;
+	}
+	
+	/* Link Panels */
+	div.panel a h2{
+		font-size: 2.5vw;
+	}
+	div.panel_left {
+		padding: 0px 14px 26px 26px;
+		
+	}
+	div.panel_right {
+		padding: 0px 26px 26px 14px;
+	}
+	div.black_box {
+		height: 29.2vw;
+	}
+	div.black_box2 {
+		height: 24.5vw;
+	}
+	div.black_box3 {
+		height: 20vw;
+	}
+	
+	/* Footer */
+	div#footer h4 {
+		font-size: 2vw;
+	}
+	div#footer li {
+		font-size: 1.5vw;
+	}
+	
+	/* Home Page Layout */
+	
+	/* Getting Started Section */
+	div.logobox {
+		padding: 2vw;
+	}
+	div.logobox h4 {
+		font-size: 2vw;
+	}
+	div.logobox p {
+		font-size: 1.5vw;
+	}
+	div.logobox a {
+		font-size: 1.6vw;
+	}
+	div.logobox img {
+		width: 9.5vw;
+		margin: 1vw;
+	}
+	
+	/* About Us Page Layout */
+	div#about_grid {
+		display: grid;
+		margin: 0px 20px;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: auto;
+		grid-template-areas: "about_title1  about_title1  about_title1"
+							 "about_text1   about_text1   about_img1"
+							 "about_title2  about_title2  about_title2"
+							 "about_img2    about_text2   about_text2";						 
+		grid-gap: 10px;
+	}
+	div#about_text {
+		margin: 0px;
+	}
+	
+	/* Listings Page */
+	.listings_grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: auto;
+		grid-template-areas: "listings_title1  listings_title1  listings_title1"
+							 "listings_435i    listings_b7      listings_330ci"
+							 "listings_m3      listings_m5comp  listings_550i"
+							 "listings_z4      listings_m8comp  listings_m240i"
+							 "listings_i3      listings_x5      listings_330i";					 
+		grid-gap: 1.5vw;
+		padding: 1.5vw;
+	}
+	
+	/* New Listings Page */
+	.new_listings_grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: auto;
+		grid-template-areas: "listings_title1  listings_title1  listings_title1"
+							 "listings_b7      listings_m5comp  listings_m8comp"
+							 "listings_i3      listings_x5      listings_330i";					 
+		grid-gap: 1.5vw;
+		padding: 1.5vw;
+	}
+	
+	/* Used Listings Page */
+	.used_listings_grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: auto;
+		grid-template-areas: "listings_title1  listings_title1  listings_title1"
+							 "listings_435i    listings_330ci   listings_m3"
+							 "listings_550i    listings_z4      listings_m240i";				 					 
+		grid-gap: 1.5vw;
+		padding: 1.5vw;
+	}
+	
+	/* Individual Listings */
+	div.listing h1 {
+		text-align: left;
+		padding-left: 11vw;
+	}
+	div.listing h3 {
+		margin-top: 7vw;
+	}
+	div.listing h4 {
+		color: white;
+		font-size: 30px;
+		padding-left: 29vw;
+		margin: -70px 0px 50px 0px;
+	}
+	div.listing table img, div.listing table th {
+		height: 6vw;
+	}
+}
+
+/*** Large Screen and Larger ***/
+@media screen and (min-width: 992px) {
+	/* Link Panels */
+	div.panel a h2{
+		padding: 10px 30px 10px 0px;
+	}
+	div.black_box {
+		height: 30vw;
+	}
+	div.black_box2 {
+		height: 25vw;
+	}
+	div.black_box3 {
+		height: 20.3vw;
+	}
+}
+
+/*** Extra-Large Screens ***/
+@media screen and (min-width: 1200px) {
+	/* Link Panels */
+	div.black_box {
+		height: 30.5vw;
+	}
+	div.black_box2 {
+		height: 25.5vw;
+	}
+}

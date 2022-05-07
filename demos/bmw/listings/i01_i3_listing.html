@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--
+	Author: Patrick Lindsay
+	Date: 6/1/21
+	File Name: i01_i3_listing.html
+	
+	This is the listing for the 2021 I3.
+-->
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<!-- Title -->
+		<title>BMW Sunnyville</title>
+		<!-- Icon -->
+		<link rel="icon" href="../icon/favicon.ico" type="image/x-icon" /> <!-- Found info at: https://stackoverflow.com/questions/2268204/favicon-dimensions/48646940 -->
+		
+		<!-- Screen Sizing -->
+		<meta name="viewport" content="width=device-width">
+		
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;700&family=Poiret+One&display=swap" rel="stylesheet">
+		
+		<!-- Bootstrap Link/Stylesheet -->
+		<link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.css" rel="stylesheet">
+		<!-- CSS Stylesheet -->
+		<link href="../styles.css" rel="stylesheet">	
+	</head>
+	
+	<body>
+		<!-- Navigation -->
+		<div class="sticky-top container-fluid">
+			<div class="navigation row">
+				<div class="col-12">
+					<ul id="nav">
+						<li><a href="../home.php">Home</a></li>
+						<li class="menu"><a href="../listings.php">Listings</a>
+							<ul class = "subnav">
+								<li><a href="../new_listings.php">New</a></li>
+								<li><a href="../used_listings.php">Used</a></li>
+							</ul>
+						</li>
+						<li><a href="../schedule.php">Schedule</a></li>
+						<li><a href="../about.php">About US</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Vehicle Listing -->
+		<div class="container-fluid listing">
+			<!-- Listing Title -->
+			<div class="row">
+				<div class="col-12">
+					<h1 class="mb-5">2021 BMW I3</h1>
+					<h4>$45,700</h4>
+				</div>
+			</div>
+
+			<!-- Photos of Car -->
+			<div class="row">
+				<div class="col-md-4 col-12">
+					<img class="listing_img" src="https://cdn.carbuzz.com/gallery-images/840x560/406000/500/406561.jpg" alt="2021 BMW I3 front">
+				</div>
+				<div class="col-md-4 col-12">
+					<img class="listing_img" src="https://cdn.motor1.com/images/mgl/NEGW2/s1/2018-bmw-i3.jpg" alt="2021 BMW I3 rear">
+				</div>
+				<div class="col-md-4 col-12">
+					<img class="listing_img" src="https://cars.usnews.com/pics/size/776x517/images/Auto/izmo/i159555444/2020_bmw_i3_dashboard.jpg" alt="2021 BMW I3 interior">
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-7 col-12">
+					<h3>Vehicle Details</h3>
+					<table>
+						<thead>
+							<tr>
+								<th><img src="https://static.cargurus.com/bundles/media/drivetrain.66c4b320b0750e4050d9d0c0e3a4624f.svg" alt="Drivetrain logo"></th>
+								<th><img src="https://static.cargurus.com/bundles/media/fuelEconomy.c1e6541bed48ed32f2f427eccf4d583d.svg" alt="Miles per gallon logo"></th>
+								<th><img src="https://static.cargurus.com/bundles/media/engineDisplacement.ecbc822d9b07f9e5899961f60db6afd4.svg" alt="Engine Logo"></th>
+								<th><img src="https://static.cargurus.com/bundles/media/gearbox.599e836c090c2f2dd75deb6c70604df6.svg" alt="transmission logo"></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>All-Wheel Drive</td> 
+								<td>102 MPGe</td> 
+								<td>Electric</td> 
+								<td>N.A.</td> 
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col-md-5 col-12">
+					<h3>Performance</h3>
+					<table>
+						<thead>
+							<tr>
+								<th>Horsepower</th>
+								<th>Torque</th>
+								<th>0-60mph</th>	
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>181 hp</td>
+								<td>150 ft-lbs</td>
+								<td>6.6 sec</td>  
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+			
+		</div>
+		
+		<!-- Footer -->
+		<div id="footer" class="container-fluid">
+			<div class="row">
+			
+				<div class="col-md-2"></div>
+				
+				<div class="col-md-4 col-6">
+					<h4>Links:</h4>
+					<ul>
+						<li><a href="../about.php">Our History</a></li>
+						<li><a href="../about.php#bmw_m_performance">BMW M Performace</a></li>
+						<li><a href="../schedule.php#???">The Ultimate Driving Experience</a></li>
+						<li><a href="../listings.php#listings_title1">View Inventory</a></li>
+						<li><a href="../company_blog.php">Company Blog</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 col-6">
+					<h4>Contact Us</h4>
+					<ul>
+						<li>sales@bmwsunnyville.com</li>
+						<li>123-456-7890</li>
+						<li>@BMWSunnyville</li>
+					</ul>
+				</div>
+				
+				<div class="col-md-2"></div>
+				
+			</div>
+		</div>
+	</body>
+</html>
