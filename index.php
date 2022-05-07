@@ -341,7 +341,7 @@ include("login/login-modal.php");
 </div> <!-- Container -->
 
 
-    <!--  ====================   JAVA PROGRAMMING   ====================  -->
+    <!--  ====================   JAVA DEVELOPMENT   ====================  -->
 
 <div id="container2" class="container-fluid px-0">
     <!-- Transition background image -->
@@ -352,7 +352,7 @@ include("login/login-modal.php");
     <div class="pb-2 mb-3 border-bottom border-2"></div> <!-- divider -->
     <div class="p-0 p-md-2 px-md-5 p-lg-4 mb-3 bg-dark bg-opacity-80 text-white shadow ease-pad">
         <div class="container-fluid py-2 px-md-5 ease-pad">
-            <h1 class="indent-md display-6 px-md-5 ease-pad fw-bold mx-5 text-center text-md-start">Java Programming</h1>
+            <h1 class="indent-md display-6 px-md-5 ease-pad fw-bold mx-5 text-center text-md-start">Java Development</h1>
         </div>
     </div>
     <div class="mb-4 border-top border-2"></div> <!-- divider -->
