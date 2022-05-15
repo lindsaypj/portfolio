@@ -72,8 +72,7 @@
 			<div class="row">
 				<!-- Ultimate Driving Experience -->
 				<div id="div_ultimate" class="col-12">
-					<img id="img_ultimate" src="https://i1.wp.com/boxthislap.org/app/uploads/2019/09/MH_BMW_M4_GT4_013_ret_1282x855px.jpg?fit=1200%2C824&ssl=1"
-						 alt="BMW M4 GT4 Racecar">
+					<img id="img_ultimate" src="images/bmw-m4gt4.jpg" alt="BMW M4 GT4 Racecar">
 					<h2 id="h2_ultimate">THE <span>ULTIMATE</span> DRIVING <br> EXPERIENCE</h2>
 					<div class="learn">
 						<a href="">Learn More</a>

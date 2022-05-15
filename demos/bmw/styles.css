@@ -368,6 +368,11 @@
 		font-size: 21px;
 		font-family: "Times New Roman", serif;
 	}
+
+	/* Prevent underline on links */
+	.no-underline:hover {
+		text-decoration: none;
+	}
 /*=====================================================================*/
 					/*** VARYING SCREEN SIZES ***/
 /*=====================================================================*/
