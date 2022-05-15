@@ -46,6 +46,25 @@
     <?php include("includes/nav.html"); ?>
 
     <div class="container-fluid">
+        <!-- Blog internal Nav -->
+        <div class="row">
+            <div class="col-12 col-sm-9 mx-auto">
+                <a class="float-left font-weight-bold" href="company_blog.php">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                    </svg>
+                    <p class="float-right"> Blog Home</p>
+                </a>
+                <a class="float-right font-weight-bold" href="blog_2.php">
+                    <p class="float-left">Next: Blog 2 </p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+
         <!-- Blog header -->
         <div class="row">
             <div id="blog-header" class="col-12">
@@ -55,7 +74,7 @@
         </div>
 
         <div class="row">
-            <div id="blog-content" class="col-9 mx-auto pt-5 pb-3"> <!-- EM DASH: — -->
+            <div id="blog-content" class="col-12 col-sm-9 mx-auto pt-5 pb-3"> <!-- EM DASH: — -->
                 <p>
                     At BMW of Sunnyville we are a family of car fanatics. We are passionate about the driving experience
                     and work to share our passion with our customers. We strive to provide our customers with the best
@@ -90,6 +109,24 @@
                 </p>
                 <p class="text-right font-italic"> Patrick Lindsay - 4/26/2022</p>
             </div>
+        </div>
+    </div>
+
+    <!-- Blog internal Nav -->
+    <div class="row">
+        <div class="col-12 col-sm-9 mx-auto mb-3">
+            <a class="float-left font-weight-bold" href="company_blog.php">
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                </svg>
+                <p class="float-right"> Blog Home</p>
+            </a>
+            <a class="float-right font-weight-bold" href="blog_2.php">
+                <p class="float-left">Next: Blog 2 </p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </a>
         </div>
     </div>
 
