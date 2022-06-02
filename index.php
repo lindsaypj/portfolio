@@ -85,13 +85,13 @@ include("login/login-modal.php");
                         <p class="indent mb-0">
                             My name is Patrick Lindsay, and I am a Software Development student at
                             <a class="text-decoration-none" href="//www.greenriver.edu/" target="_blank">Green River College</a>.
-                            For as long as I can remember, my family has been on computers. My dad works in Network
-                            Security and my mom is a Data Analyst, so using computers feels natural.
+                            For as long as I can remember, I have been on computers. My dad works in Network
+                            Security and my mom is a Data Analyst, so using computers came naturally.
                         </p>
                         <p class="indent mb-0">
                             From Graphic Design and Gaming, to Full-Stack Web Development
                             and Systems Programming, I have many interests in tech. I particularly
-                            enjoy solving complex logic problems and learning how things work.
+                            enjoy solving complex problems and learning how things work.
                             I tend to lose track of time when I'm coding, pushing the limits of
                             my understanding.
                         </p>
