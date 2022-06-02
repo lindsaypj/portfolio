@@ -363,7 +363,7 @@ include("login/login-modal.php");
             <!-- Div Background -->
             <div class="px-3 px-md-4 px-lg-4 px-xl-5 py-3 py-md-4 text-white bg-dark bg-opacity-80 shadow rounded ease-pad">
 
-                <!-- Evil Hangman -->
+                <!-- Auto-Complete -->
                 <div class="row my-5">
 
                     <!-- Pictures -->
@@ -371,24 +371,24 @@ include("login/login-modal.php");
                         <div class="carousel slide carousel-fade mx-auto shadow" id="hangmanCarousel" data-bs-ride="carousel">
                             <!-- Carousel Indicators -->
                             <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#hangmanCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Evil Hangman game beginning"></button>
-                                <button type="button" data-bs-target="#hangmanCarousel" data-bs-slide-to="1" aria-label="Evil Hangman game end"></button>
+                                <button type="button" data-bs-target="#autoCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Evil Hangman game beginning"></button>
+                                <button type="button" data-bs-target="#autoCarousel" data-bs-slide-to="1" aria-label="Evil Hangman game end"></button>
                             </div>
                             <!-- Carousel Content -->
                             <div class="carousel-inner rounded">
                                 <div class="carousel-item active">
-                                    <img class="w-100 d-block" src="images/hangman/evil-hangman1.png" alt="Evil Hangman game beginning">
+                                    <img class="w-100 d-block" src="images/auto-complete/auto-complete-blank.png" alt="Auto Complete window with empty search box">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="w-100 d-block" src="images/hangman/evil-hangman2.png" alt="Evil Hangman game end">
+                                    <img class="w-100 d-block" src="images/auto-complete/auto-complete.png" alt="Auto-Complete window with some input and a list of words starting with the input">
                                 </div>
                             </div>
                             <!-- Carousel Controls -->
-                            <button class="carousel-control-prev" type="button" data-bs-target="#hangmanCarousel" data-bs-slide="prev">
+                            <button class="carousel-control-prev" type="button" data-bs-target="#autoCarousel" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#hangmanCarousel" data-bs-slide="next">
+                            <button class="carousel-control-next" type="button" data-bs-target="#autoCarousel" data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
@@ -399,10 +399,10 @@ include("login/login-modal.php");
                     <div class="col-12 col-lg-4 order-lg-1 mt-3 mt-lg-0">
                         <div class="d-table pe-0 me-xl-4 mt-md-2 mt-lg-0 h-100">
                             <div class="d-table-cell align-middle">
-                                <h2 class="px-5 px-lg-3 fw-normal text-center text-md-start text-lg-center ease-pad">Evil Hangman
-                                    <a class="text-primary" href="https://github.com/lindsaypj/evil-hangman" target="_blank" aria-label="GitHub Repository">
+                                <h2 class="px-5 px-lg-3 fw-normal text-center text-md-start text-lg-center ease-pad">Auto-Complete
+                                    <a class="text-primary" href="https://github.com/lindsaypj/AutoComplete" target="_blank" aria-label="GitHub Repository">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="mb-3" viewBox="0 0 16 16">
-                                            <title>Evil Hangman: GitHub Repo</title>
+                                            <title>Auto-Complete: GitHub Repo</title>
                                             <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
                                             <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
                                         </svg>
@@ -410,14 +410,14 @@ include("login/login-modal.php");
                                 </h2>
                                 <div class="pb-3 border-top border-2"></div>
                                 <p class="indent mb-0">
-                                    This is a twist on the classic game of hangman. You are the guesser, and with each guess
-                                    the program will narrow down the list of all possible words. The intent is to keep you
-                                    guessing for as long as possible.
+                                    This small program was developed to practice working with a tree structure and
+                                    writing recursive methods. The program stores a dictionary of 80,000 words and
+                                    displays a definition when a word is entered.
                                 </p>
                                 <p class="indent mb-0">
-                                    In the screenshots, you can see the list of remaining
-                                    words is printed. The game was in debug mode, normally you would not know what words
-                                    remain—making it very difficult to narrow the list in few guesses.
+                                    When the user types in the text box, a list of words that start with the input
+                                    string are shown. If search is pressed and the word is found, the definition will be
+                                    shown.
                                 </p>
                                 <div class="pt-3 border-bottom border-2"></div>
                                 <div>
@@ -447,8 +447,48 @@ include("login/login-modal.php");
                                             </svg>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link px-0" href="//www.jgrasp.org/" target="_blank" aria-label="jGRASP Home Page" title="jGRASP">
-                                                <img id="jgrasp-logo" src="images/logos/jgrasp-logo.png" alt="jGRASP Logo">
+                                            <a class="nav-link" href="https://www.jetbrains.com/idea/" target="_blank" aria-label="InteliJ IDEA Product Page" title="InteliJ IDEA">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="50" viewBox="0 0 105 105" width="50">
+                                                    <linearGradient id="a-idea" gradientUnits="userSpaceOnUse" x1="11.16" x2="58.94" y1="59.21" y2="56.78">
+                                                        <stop offset=".09" stop-color="#fc801d"/>
+                                                        <stop offset=".23" stop-color="#b07f61"/>
+                                                        <stop offset=".41" stop-color="#577db3"/>
+                                                        <stop offset=".53" stop-color="#1e7ce6"/>
+                                                        <stop offset=".59" stop-color="#087cfa"/>
+                                                    </linearGradient>
+                                                    <linearGradient id="b-idea" gradientUnits="userSpaceOnUse" x1="89.05" x2="73.12" y1="54.12" y2="6.52">
+                                                        <stop offset="0" stop-color="#fe2857"/>
+                                                        <stop offset=".08" stop-color="#cb3979"/>
+                                                        <stop offset=".16" stop-color="#9e4997"/>
+                                                        <stop offset=".25" stop-color="#7557b2"/>
+                                                        <stop offset=".34" stop-color="#5362c8"/>
+                                                        <stop offset=".44" stop-color="#386cda"/>
+                                                        <stop offset=".54" stop-color="#2373e8"/>
+                                                        <stop offset=".66" stop-color="#1478f2"/>
+                                                        <stop offset=".79" stop-color="#0b7bf8"/>
+                                                        <stop offset="1" stop-color="#087cfa"/>
+                                                    </linearGradient>
+                                                    <linearGradient id="c-idea" gradientUnits="userSpaceOnUse" x1="18.72" x2="78.8" y1="26.61" y2="125.99">
+                                                        <stop offset="0" stop-color="#fe2857"/>
+                                                        <stop offset=".08" stop-color="#fe295f"/>
+                                                        <stop offset=".21" stop-color="#ff2d76"/>
+                                                        <stop offset=".3" stop-color="#ff318c"/>
+                                                        <stop offset=".38" stop-color="#ea3896"/>
+                                                        <stop offset=".55" stop-color="#b248ae"/>
+                                                        <stop offset=".79" stop-color="#5a63d6"/>
+                                                        <stop offset="1" stop-color="#087cfa"/>
+                                                    </linearGradient>
+                                                    <path d="m19.27 72.21-14.12-11.15 8.31-15.39 12.49 4.18z" fill="url(#a-idea)"/>
+                                                    <path d="m100.07 30.09-1.73 55.6-36.98 14.81-20.14-13z" fill="#087cfa"/>
+                                                    <path d="m100.07 30.09-18.3 17.85-23.5-28.83 11.6-13.04z" fill="url(#b-idea)"/>
+                                                    <path d="m41.22 87.5-29.41 10.63 6.16-21.57 7.98-26.71-21.88-7.32 13.9-38.03 31.42 3.71 32.38 39.73z" fill="url(#c-idea)"/>
+                                                    <path d="m22.5 22.5h60v60h-60z"/>
+                                                    <g fill="#fff">
+                                                        <path d="m29.98 71.16h22.5v3.75h-22.5z"/>
+                                                        <path d="m41.21 34.12v-4.1h-11.19v4.1h3.14v14.16h-3.14v4.1h11.19v-4.1h-3.13v-14.16z"/>
+                                                        <path d="m51.94 52.7a8.88 8.88 0 0 1 -4.39-1 10.16 10.16 0 0 1 -2.92-2.36l3.09-3.45a8.86 8.86 0 0 0 1.94 1.64 4 4 0 0 0 2.15.6 2.85 2.85 0 0 0 2.19-.87 4.16 4.16 0 0 0 .8-2.83v-14.43h5v14.65a10.14 10.14 0 0 1 -.55 3.49 6.49 6.49 0 0 1 -4.07 4 9.87 9.87 0 0 1 -3.31.52"/>
+                                                    </g>
+                                                </svg>
                                             </a>
                                         </li>
                                     </ul>
