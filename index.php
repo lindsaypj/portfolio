@@ -368,11 +368,12 @@ include("login/login-modal.php");
 
                     <!-- Pictures -->
                     <div class="col-12 col-lg-8 order-lg-2">
-                        <div class="carousel slide carousel-fade mx-auto shadow" id="hangmanCarousel" data-bs-ride="carousel">
+                        <div class="carousel slide carousel-fade mx-auto shadow carousel-dark" id="autoCarousel" data-bs-ride="carousel">
                             <!-- Carousel Indicators -->
                             <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#autoCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Evil Hangman game beginning"></button>
-                                <button type="button" data-bs-target="#autoCarousel" data-bs-slide-to="1" aria-label="Evil Hangman game end"></button>
+                                <button type="button" data-bs-target="#autoCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Auto Complete window with empty search box"></button>
+                                <button type="button" data-bs-target="#autoCarousel" data-bs-slide-to="1" aria-label="Auto-Complete window with some input and a list of words starting with the input"></button>
+                                <button type="button" data-bs-target="#autoCarousel" data-bs-slide-to="2" aria-label="Auto-Complete window with search result (a definition)"></button>
                             </div>
                             <!-- Carousel Content -->
                             <div class="carousel-inner rounded">
@@ -381,6 +382,9 @@ include("login/login-modal.php");
                                 </div>
                                 <div class="carousel-item">
                                     <img class="w-100 d-block" src="images/auto-complete/auto-complete.png" alt="Auto-Complete window with some input and a list of words starting with the input">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="w-100 d-block" src="images/auto-complete/auto-complete-search.png" alt="Auto-Complete window with search result (a definition)">
                                 </div>
                             </div>
                             <!-- Carousel Controls -->
