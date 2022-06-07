@@ -373,7 +373,7 @@
 	.no-underline:hover {
 		text-decoration: none;
 	}
-	ul.text-default li {
+	ul.text-default li, ol.text-default li {
 		font-size: 21px;
 		font-family: "Times New Roman", serif;
 	}
